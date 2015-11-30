@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <div>
     <a class="btn btn-default button-back" href="#/" role="button">Back</a>
-    <div class="row flickr-detail">
+    <h3 ng-show="item == undefined"><br>Item not found</h3>
+    <div ng-show="item != undefined" class="row flickr-detail">
         <h2><a class="item-title" href="{{item.link}}" target="_blank">{{item.title}}</a></h2>
         <a class="item-author detail" href="https://www.flickr.com/photos/{{item.author_id}}/" target="_blank">{{item.author | author}}</a> &nbsp;|&nbsp;
         <span class="item-published detail">Published: {{item.published | published}}</span>
