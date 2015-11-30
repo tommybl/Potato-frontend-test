@@ -4,11 +4,27 @@
 
 `npm install && npm run gulp`
 
-**Make sure to have installed npm, bower, node and gulp, for the automatic build to success**
+_Make sure to have installed npm, bower, node and gulp, for the automatic build to success_
 
 > You can see a running demo there
 
 [http://webexperience.fr/tommylopes/potato/](http://webexperience.fr/tommylopes/potato/)
+
+### Mandatory
+
+* AngularJS
+* Less (css)
+* One-page App
+* Cross Browsers
+* Responsive
+
+### Extras
+
+* Gulp for generating production-ready code
+* Bower as package manager
+* Search Items
+* "Load more" style pagination
+* Google +1 button for results
 
 ### Screenshots
 
