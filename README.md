@@ -36,3 +36,5 @@ _Make sure to have installed npm, bower, node and gulp, for the automatic build 
 ![alt tag](http://webexperience.fr/tommylopes/potato/screenshots/3.png)
 
 ![alt tag](http://webexperience.fr/tommylopes/potato/screenshots/4.png)
+
+![alt tag](http://webexperience.fr/tommylopes/potato/screenshots/5.png)
