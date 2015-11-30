@@ -25,6 +25,7 @@ _Make sure to have installed npm, bower, node and gulp, for the automatic build 
 * Search Items
 * "Load more" style pagination
 * Google +1 button for results
+* Animations
 
 ### Screenshots
 
