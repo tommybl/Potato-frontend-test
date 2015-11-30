@@ -75,8 +75,9 @@ a {
         max-height: 140px; }
     .item-img-wrap {
         width: 140px;
-        float: left; }
-    .item-details { margin-left: 160px; }
+        @media screen and (max-width: 500px) { margin-bottom: 25px; }
+        @media screen and (min-width: 500px) { float: left; }}
+    .item-details { @media screen and (min-width: 500px) { margin-left: 160px; }}
     .item-author {
         float: left;
         margin-right: 30px; }
@@ -116,9 +117,10 @@ a {
         max-height: 240px; }
     .item-img-wrap {
         width: 240px;
-        float: left; }
+        @media screen and (max-width: 600px) { margin-bottom: 25px; }
+        @media screen and (min-width: 600px) { float: left; }}
     .item-details { margin-top: 30px; }
-    .item-description, .item-tags { margin-left: 260px; }
+    .item-description, .item-tags { @media screen and (min-width: 600px) { margin-left: 260px; }}
     .item-tag {
         display: inline-block;
         padding: 5px 10px;
