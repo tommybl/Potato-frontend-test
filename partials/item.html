@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<div>
+    <a class="btn btn-default button-back" href="#/" role="button">Back</a>
+    <div class="row flickr-detail">
+        <h2><a class="item-title" href="{{item.link}}" target="_blank">{{item.title}}</a></h2>
+        <a class="item-author detail" href="https://www.flickr.com/photos/{{item.author_id}}/" target="_blank">{{item.author | author}}</a> &nbsp;|&nbsp;
+        <span class="item-published detail">Published: {{item.published | published}}</span>
+        <div google-plus="item.link" class="google-button"></div>
+        <div class="item-details">
+            <div class="item-img-wrap"><img src="{{item.media.m}}" class="item-img"></div>
+            <div class="item-description" ng-bind-html="item.description"></div>
+            <div class="item-tags" ng-bind-html="item.tags | tags"></div>
+        </div>
+        <hr/>
+    </div>
+    <img class="loader" src="img/loading.gif" width="100" height="100" ng-if="items==undefined">
+</div>

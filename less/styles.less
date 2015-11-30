@@ -1,0 +1,202 @@
+@color_light: #F0F0F0;
+@color_dark: #303132;
+
+
+/* ***** GLOBAL ****** */
+
+body {
+    background: @color_light;
+    color: @color_dark;
+    * { font-family: 'Inconsolata', sans-serif; }
+}
+
+h1 {
+    display: inline-block;
+    background: @color_dark;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+h3 {
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 10px;
+    cursor: pointer;
+    &:hover { text-decoration: underline; }
+}
+
+hr {
+    border-top: 1px solid #888;
+    float: left;
+    width: 100%;
+    margin: 25px 0;
+}
+
+a {
+    font-weight: bold;
+    text-decoration: underline;
+    color: @color_dark;
+    &:hover { color: #777; }
+}
+
+#title {
+    text-align: center;
+}
+
+.view-container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px 40px;
+    position:relative;
+}
+
+.loader {
+    display: block;
+    margin: auto;
+}
+
+.google-button {
+    float: right;
+}
+
+.flickr-items {
+    margin-top: 25px;
+}
+
+/* ***** FLICKR ITEMS ****** */
+
+.flickr-items {
+    .item-img {
+        max-width: 140px;
+        max-height: 140px; }
+    .item-img-wrap {
+        width: 140px;
+        float: left; }
+    .item-details { margin-left: 160px; }
+    .item-author {
+        float: left;
+        margin-right: 30px; }
+    .item-published { margin-right: 24px; }
+}
+
+.animate-repeat {
+    overflow: hidden;
+}
+
+.search-wrap {
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    border: none;
+    border-radius: 0;
+}
+
+@media screen and (max-width: 800px) {
+    .flickr-items {
+        .item-author { margin-right: 20px; }
+        .item-published { display: block; }
+    }
+}
+
+/* ***** FLICKR DETAIL ****** */
+
+.flickr-detail {
+    font-size: 17px;
+    .item-title { 
+        text-decoration: none;
+        &:hover { text-decoration: underline; }}
+    .item-img {
+        max-width: 240px;
+        max-height: 240px; }
+    .item-img-wrap {
+        width: 240px;
+        float: left; }
+    .item-details { margin-top: 30px; }
+    item-description, .item-tags { margin-left: 260px; }
+    .item-tag {
+        display: inline-block;
+        padding: 5px 10px;
+        background: @color_dark;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 14px;
+        margin-right: 10px;
+        margin-top: 10px; }
+        .item-description p:first-child,
+        .item-description p:first-child + p {
+            display: none;
+        }
+}
+
+.button-back {
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 0;
+    position: relative;
+    background: #fff;
+    border: 1px solid #ccc;
+    &:before, &:after {
+        right: 100%;
+        top: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none; }
+    &:after {
+        border-color: rgba(255, 255, 255, 0);
+        border-right-color: #fff;
+        border-width: 17px;
+        margin-top: -17px; }
+    &:before {
+        border-color: rgba(204, 204, 204, 0);
+        border-right-color: #ccc;
+        border-width: 18px;
+        margin-top: -18px; }
+}
+
+.more-items {
+    font-size: 30px;
+    padding: 10px 15px;
+    margin-bottom: 50px;
+}
+
+/* ***** ANIMATIONS ****** */
+
+.animate-repeat {
+    &.ng-move, &.ng-enter, &.ng-leave {
+        -webkit-transition:all linear 0.7s;
+        transition:all linear 0.7s; }
+    &.ng-leave.ng-leave-active, &.ng-move, &.ng-enter {
+        opacity:0;
+        max-height:0; }
+    &.ng-leave, &.ng-move.ng-move-active, &.ng-enter.ng-enter-active {
+        opacity:1;
+        max-height:300px; }
+}
+
+.view-animate-enter {
+    -webkit-transition: 1.5s linear all;
+    transition: 1.5s linear all;
+}
+
+.reveal-animation.ng-leave { .view-animate-enter; }
+
+.view-animate {
+    &.ng-enter {
+        .view-animate-enter;
+        opacity: 0;
+        &.ng-enter-active { opacity: 1; }}
+    &.ng-leave {
+        opacity: 1;
+        &.ng-leave-active { opacity: 0; }}
+}

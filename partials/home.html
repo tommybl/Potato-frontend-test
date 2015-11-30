@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<div>
+    <div class="row">
+        <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4 search-wrap">
+        <input type="text" ng-model="search.title" placeholder="Filter items" class="form-control search-input" ng-show="items!=undefined"/>
+        </div>
+    </div>
+    <div class="row flickr-items">
+        <div ng-init="limit=6">
+            <div class="animate-repeat" ng-repeat="item in items | filter:search | limitTo:limit as results">
+                <div class="item-img-wrap"><img src="{{item.media.m}}" class="item-img"></div>
+                <div class="item-details">
+                    <h3 ng-click="showDetails($index)">{{item.title}}</h3>
+                    <span class="item-published detail">Published: {{item.published | published}}</span>
+                    <a class="item-author detail" href="https://www.flickr.com/photos/{{item.author_id}}/" target="_blank">{{item.author | author}}</a>
+                    <a class="item-link detail" href="{{item.link}}" target="_blank">View on Flickr</a>
+                    <!--<div class="g-plusone" data-size="medium" data-href="{{item.link}}"></div>-->
+                    <div google-plus="item.link" class="google-button"></div>
+                </div>
+                <hr/>
+            </div>
+            <div class="animate-repeat" ng-if="results.length == 0">
+                <strong>No items found !</strong>
+            </div>
+        </div>
+        <button class="more-items" ng-hide="items==undefined || results.length == 0 || results.length >= items.length" ng-click="limit=limit+6">Show more...</button>
+        <p class="more-items" ng-show="results.length >= items.length">No more items</p>
+    </div>
+    <img class="loader" src="img/loading.gif" width="100" height="100" ng-if="items==undefined">
+</div>

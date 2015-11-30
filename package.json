@@ -1,0 +1,26 @@
+{
+  "name": "tommy-lopes-for-potato",
+  "version": "1.0.0",
+  "description": "Potato Front End Task - Done by Tommy Lopes",
+  "main": "gulpfile.js",
+  "scripts": {
+    "gulp": "gulp",
+    "test": "echo \"No test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tommybl/Potato-frontend-test.git"
+  },
+  "author": "Tommy Lopes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tommybl/Potato-frontend-test/issues"
+  },
+  "homepage": "https://github.com/tommybl/Potato-frontend-test#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-bower": "0.0.11",
+    "gulp-less": "^3.0.5",
+    "path": "^0.12.7"
+  }
+}
