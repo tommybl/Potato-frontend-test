@@ -1,6 +1,6 @@
 # Potato Front End Task
 
-> Build process: Download the project and run the following command
+> Build process: download the project and run the following command
 
 `npm install && npm run gulp`
 
@@ -8,10 +8,10 @@
 
 ### Screenshots
 
-![alt tag](http://webexperience.fr/tommylopes/potato/1.png)
+![alt tag](http://webexperience.fr/tommylopes/potato/screenshots/1.png)
 
-![alt tag](http://webexperience.fr/tommylopes/potato/2.png)
+![alt tag](http://webexperience.fr/tommylopes/potato/screenshots/2.png)
 
-![alt tag](http://webexperience.fr/tommylopes/potato/3.png)
+![alt tag](http://webexperience.fr/tommylopes/potato/screenshots/3.png)
 
-![alt tag](http://webexperience.fr/tommylopes/potato/4.png)
+![alt tag](http://webexperience.fr/tommylopes/potato/screenshots/4.png)
