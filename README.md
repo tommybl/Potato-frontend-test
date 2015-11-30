@@ -8,7 +8,7 @@
 
 > You can see a running demo there
 
-`http://webexperience.fr/tommylopes/potato/`
+* [http://webexperience.fr/tommylopes/potato/](http://webexperience.fr/tommylopes/potato/)
 
 ### Screenshots
 
